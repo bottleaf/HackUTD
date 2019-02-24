@@ -14,9 +14,11 @@ class Pomodoro {
     var breakTime: TimeInterval
     var failedAtTime: TimeInterval?
     var listOfDistractionTimes: [TimeInterval] = []
+    var executedOnDate: Date
     
     init () {
         time = SettingsConfig.TimerLengthInSeconds
         breakTime = SettingsConfig.BreakLengthInSeconds
+        executedOnDate = Date()
     }
 }

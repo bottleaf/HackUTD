@@ -9,10 +9,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
-    var currentPomodoroSet: PomodoroSet?
-    var listOfPomodoros: [Pomodoro] = []
-    var listOfPomodoroSets: [PomodoroSet] = []
+    
+    var tabBarVC: TabBarViewController?
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var breakTimerLabel: UILabel!
@@ -41,6 +39,8 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarVC = (self.tabBarController as? TabBarViewController)!
     }
     
     // MARK - Navigation
@@ -49,13 +49,13 @@ class StartViewController: UIViewController {
         if let destinationNavigationController = segue.destination as? PomodoroViewController {
             // Create a new Pomodoro instance
             let newPomodoro = Pomodoro()
-            if currentPomodoroSet == nil {
-                currentPomodoroSet = PomodoroSet()
-                listOfPomodoroSets.append(currentPomodoroSet!)
+            if tabBarVC!.currentPomodoroSet == nil {
+                tabBarVC!.currentPomodoroSet = PomodoroSet()
+                tabBarVC!.listOfPomodoroSets.append(tabBarVC!.currentPomodoroSet!)
             }
             
-            currentPomodoroSet?.pomodoros.append(newPomodoro)
-            listOfPomodoros.append(newPomodoro)
+            tabBarVC!.currentPomodoroSet?.pomodoros.append(newPomodoro)
+            tabBarVC!.listOfPomodoros.append(newPomodoro)
             
             destinationNavigationController.currentPomodoroInstance = newPomodoro
         }

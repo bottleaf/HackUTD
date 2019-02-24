@@ -21,6 +21,14 @@ class PomodoroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
+        
+        //makes button rounded
+        giveUpButton.layer.cornerRadius = 10;
+        giveUpButton.clipsToBounds = true;
+        distractionButton.layer.cornerRadius = 10;
+        distractionButton.clipsToBounds = true;
+        endBreakButton.layer.cornerRadius = 10;
+        endBreakButton.clipsToBounds = true;
     }
     
     // Starts timer with the passed in Pomodoro timer length

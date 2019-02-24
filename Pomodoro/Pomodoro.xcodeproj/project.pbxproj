@@ -18,6 +18,8 @@
 		96459CEE2222510600A91E0D /* SettingsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96459CED2222510600A91E0D /* SettingsConfig.swift */; };
 		96459CF02222551D00A91E0D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96459CEF2222551D00A91E0D /* SettingsTableViewController.swift */; };
 		969980342222E4A0007151CC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969980332222E4A0007151CC /* Alert.swift */; };
+		969980382222E8DF007151CC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969980372222E8DF007151CC /* HistoryTableViewController.swift */; };
+		9699803A2222F1AF007151CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969980392222F1AF007151CC /* TabBarViewController.swift */; };
 		96F114AB22225F9500AD247B /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AA22225F9500AD247B /* PickerTableViewCell.swift */; };
 		96F114AD2222675C00AD247B /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AC2222675C00AD247B /* Pomodoro.swift */; };
 		96F114AF222269E000AD247B /* PomodoroSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AE222269E000AD247B /* PomodoroSet.swift */; };
@@ -37,6 +39,8 @@
 		96459CED2222510600A91E0D /* SettingsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfig.swift; sourceTree = "<group>"; };
 		96459CEF2222551D00A91E0D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		969980332222E4A0007151CC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		969980372222E8DF007151CC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		969980392222F1AF007151CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		96F114AA22225F9500AD247B /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		96F114AC2222675C00AD247B /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		96F114AE222269E000AD247B /* PomodoroSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSet.swift; sourceTree = "<group>"; };
@@ -88,9 +92,11 @@
 		96459CE62222476E00A91E0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				969980392222F1AF007151CC /* TabBarViewController.swift */,
 				96459CD3222243CA00A91E0D /* StartViewController.swift */,
 				96459CE7222247C900A91E0D /* PomodoroViewController.swift */,
 				96459CEF2222551D00A91E0D /* SettingsTableViewController.swift */,
+				969980372222E8DF007151CC /* HistoryTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				96F114AB22225F9500AD247B /* PickerTableViewCell.swift in Sources */,
 				96459CD4222243CA00A91E0D /* StartViewController.swift in Sources */,
 				96459CEE2222510600A91E0D /* SettingsConfig.swift in Sources */,
+				969980382222E8DF007151CC /* HistoryTableViewController.swift in Sources */,
 				969980342222E4A0007151CC /* Alert.swift in Sources */,
+				9699803A2222F1AF007151CC /* TabBarViewController.swift in Sources */,
 				96459CD2222243CA00A91E0D /* AppDelegate.swift in Sources */,
 				96459CF02222551D00A91E0D /* SettingsTableViewController.swift in Sources */,
 			);
