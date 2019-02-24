@@ -17,19 +17,25 @@ class StartViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var breakTimerLabel: UILabel!
     
+    @IBOutlet weak var startButton: UIButton!
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
+        //makes button rounded
+        startButton.layer.cornerRadius = 10;
+        startButton.clipsToBounds = true;
+        
         // Appends a 0 if less than 10
-        if Int(SettingsConfig.TimerLengthInSeconds) < 10 {
-            timerLabel.text = "0\(Int(SettingsConfig.TimerLengthInSeconds) / 3600)"
+        if Int(SettingsConfig.TimerLengthInSeconds) / 60 < 10 {
+            timerLabel.text = "0\(Int(SettingsConfig.TimerLengthInSeconds / 60))"
         } else {
-            timerLabel.text = String(Int(SettingsConfig.TimerLengthInSeconds) / 3600)
+            timerLabel.text = String(Int(SettingsConfig.TimerLengthInSeconds / 60))
         }
-        if Int(SettingsConfig.BreakLengthInSeconds) < 10 {
-            breakTimerLabel.text = "0\((Int(SettingsConfig.BreakLengthInSeconds) % 3600) / 60)"
+        if Int(SettingsConfig.BreakLengthInSeconds) / 60 < 10 {
+            breakTimerLabel.text = "0\(Int(SettingsConfig.BreakLengthInSeconds / 60))"
         } else {
-            breakTimerLabel.text = String((Int(SettingsConfig.BreakLengthInSeconds) % 3600) / 60)
+            breakTimerLabel.text = String(Int(SettingsConfig.BreakLengthInSeconds / 60))
         }
     }
     

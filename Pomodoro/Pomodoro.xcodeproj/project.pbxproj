@@ -17,6 +17,7 @@
 		96459CEC222249EA00A91E0D /* MyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96459CEB222249EA00A91E0D /* MyProtocols.swift */; };
 		96459CEE2222510600A91E0D /* SettingsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96459CED2222510600A91E0D /* SettingsConfig.swift */; };
 		96459CF02222551D00A91E0D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96459CEF2222551D00A91E0D /* SettingsTableViewController.swift */; };
+		969980342222E4A0007151CC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969980332222E4A0007151CC /* Alert.swift */; };
 		96F114AB22225F9500AD247B /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AA22225F9500AD247B /* PickerTableViewCell.swift */; };
 		96F114AD2222675C00AD247B /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AC2222675C00AD247B /* Pomodoro.swift */; };
 		96F114AF222269E000AD247B /* PomodoroSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F114AE222269E000AD247B /* PomodoroSet.swift */; };
@@ -35,6 +36,7 @@
 		96459CEB222249EA00A91E0D /* MyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProtocols.swift; sourceTree = "<group>"; };
 		96459CED2222510600A91E0D /* SettingsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfig.swift; sourceTree = "<group>"; };
 		96459CEF2222551D00A91E0D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		969980332222E4A0007151CC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		96F114AA22225F9500AD247B /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		96F114AC2222675C00AD247B /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		96F114AE222269E000AD247B /* PomodoroSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSet.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				96459CED2222510600A91E0D /* SettingsConfig.swift */,
 				96F114AC2222675C00AD247B /* Pomodoro.swift */,
 				96F114AE222269E000AD247B /* PomodoroSet.swift */,
+				969980332222E4A0007151CC /* Alert.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				96F114AB22225F9500AD247B /* PickerTableViewCell.swift in Sources */,
 				96459CD4222243CA00A91E0D /* StartViewController.swift in Sources */,
 				96459CEE2222510600A91E0D /* SettingsConfig.swift in Sources */,
+				969980342222E4A0007151CC /* Alert.swift in Sources */,
 				96459CD2222243CA00A91E0D /* AppDelegate.swift in Sources */,
 				96459CF02222551D00A91E0D /* SettingsTableViewController.swift in Sources */,
 			);

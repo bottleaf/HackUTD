@@ -9,6 +9,6 @@
 import Foundation
 
 class SettingsConfig {
-    static var TimerLengthInSeconds: TimeInterval = 25.0
+    static var TimerLengthInSeconds: TimeInterval = 10.0
     static var BreakLengthInSeconds: TimeInterval = 5.0
 }

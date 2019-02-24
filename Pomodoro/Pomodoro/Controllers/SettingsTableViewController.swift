@@ -46,7 +46,7 @@ class SettingsTableViewController: UITableViewController {
             cell.title.text = "Timer Length"
             timerPicker = cell.picker
             
-            let currentTimeInterval: Int = Int(SettingsConfig.TimerLengthInSeconds) * 60
+            let currentTimeInterval: Int = Int(SettingsConfig.TimerLengthInSeconds)
             let calendar = Calendar(identifier: .gregorian)
             let date = DateComponents(calendar: calendar, hour: currentTimeInterval / 3600, minute: (currentTimeInterval % 3600) / 60).date!
             timerPicker?.setDate(date, animated: true)
@@ -61,7 +61,7 @@ class SettingsTableViewController: UITableViewController {
             cell.title.text = "Break Length"
             breakTimerPicker = cell.picker
             
-            let currentTimeInterval: Int = Int(SettingsConfig.BreakLengthInSeconds) * 60
+            let currentTimeInterval: Int = Int(SettingsConfig.BreakLengthInSeconds)
             let calendar = Calendar(identifier: .gregorian)
             let date = DateComponents(calendar: calendar, hour: currentTimeInterval / 3600, minute: (currentTimeInterval % 3600) / 60).date!
             breakTimerPicker?.setDate(date, animated: true)
